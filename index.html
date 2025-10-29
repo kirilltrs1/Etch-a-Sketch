@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Title</title>
+<style>
+#container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  width: 800px;
+  height: 800px;
+  gap: 2px;
+}
+button {
+            /* Basic styling */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px 30px; /* Padding inside the button */
+    border: 1; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    margin-bottom: 5%;
+    font-size: 18px; /* Text size */
+    cursor: pointer; /* Change cursor on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline if it's a link */
+    display: inline-block; /* Allows setting width/height and padding */
+}
+
+#container div {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+</head>
+<body>
+    <button>Change number of squares</button>
+    <div id = "container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
